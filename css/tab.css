@@ -1,0 +1,108 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+/* 탭메뉴 꾸미기 }*/
+.tab{
+  width:600px; 
+  overflow: hidden;
+}
+.tabnav{
+  width:600px; 
+  overflow: hidden;
+}
+
+.tabnav li{
+  float: left;
+}
+.tabnav li a{ 
+  display: block;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* 항공권 */
+.tab02_inner{
+  width: 567px;
+  overflow: hidden;
+}
+
+  .tab02_ul{
+    width: 567px;
+    overflow: hidden;
+  }
+
+    .tab02_ul li{
+      float: left;
+    }
+
+        .tab02_ul li a{
+          display: inline-block;
+          border-radius: 5px;
+          color: #5a5a5a;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px 125px;
+        }
+
+
+#roundtrip{
+  padding-top: 10px;
+}
+
+
+
+
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+.tabnav li .active{
+  border-top: 2px solid black;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+.tabnav li:nth-child(1) a:hover,
+.tabnav li:nth-child(1) a.active{
+  background: url(../images/suitcase_black.png) no-repeat 5px 12px;
+  color: black;
+}
+
+.tabnav li:nth-child(2) a:hover,
+.tabnav li:nth-child(2) a.active{
+  background: url(../images/plane_black.png) no-repeat 5px 12px;
+  color: #000;
+}
+
+.tabnav li:nth-child(3) a:hover,
+.tabnav li:nth-child(3) a.active{
+  background: url(../images/hotel_black.png) no-repeat 5px 12px;
+  color: #000;
+}
+
+/* 탭컨테츠 꾸미기 */
+.tabcontent{
+  height: 250px; 
+  position: relative;
+}
+.tabcontent2{
+  height: 100px;
+  width: 567px;
+  position: relative;
+}
+
+/* 항공권 꾸미기 */
+.tab02_ul li .active{
+  border-radius: 5px;
+}
+
+.tab02_ul li:nth-child(1) a:hover,
+.tab02_ul li:nth-child(1) a.active{
+  background-color: white;
+  color: black;
+}
+
+.tab02_ul li:nth-child(2) a:hover,
+.tab02_ul li:nth-child(2) a.active{
+  background-color: white;
+  color: black;
+}
