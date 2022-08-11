@@ -1,0 +1,718 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: black;}
+ul{list-style: none;}
+
+body{
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 1320px;
+    font-family: 'NanumSquareRound';
+}
+
+/* header */
+#header{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 99;
+
+}
+
+.header_inner{
+    width: 1320px;
+    margin: auto;
+    height: 100px;
+    padding-top: 50px;
+}
+
+.nav> li{
+    float: left;
+}
+.nav> li> a{
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 0px 14px;
+    color: #437fc1;
+    line-height: 68px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav> li> a:hover{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px 30px 0 0;
+    color: #5a5a5a;
+}
+
+
+
+/* 아이콘 */
+.nav> li> .bg1{
+    display: block;
+    height: 68px;
+    width: 38px;
+    background: url(../images/menu_blue.png) no-repeat 50% 50%;
+    margin: 0;
+}
+
+.nav> li> .bg2{
+    display: block;
+    height: 68px;
+    width: 26px;
+    background: url(../images/mypage_blue.png)no-repeat 50% 50%;
+    margin: 0;
+}
+
+.nav> li> .bg1:hover{
+    display: inline-block;
+    background: url(../images/menu_gray.png) no-repeat 50% 50%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px 30px 0 0;
+}
+
+.nav> li> .bg2:hover{
+    display: inline-block;
+    background: url(../images/mypage_gray.png) no-repeat 50% 50%;
+}
+.nav> li:nth-child(4) a:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.nav> li:nth-child(7) a:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* 전체메뉴 서브메뉴 */
+.menu_inner{
+    width: 100%;
+    position: absolute; 
+    display: none;
+    left: 0; 
+    top: 118px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.sub1{
+    width: 1320px;
+    margin: auto;
+    height: 400px;
+    padding: 30px 0 30px 0px;
+    box-sizing: border-box;
+}
+
+.sub1> li{
+    float: left;
+    margin: 0 100px 20px 0;
+}
+
+.sub1> .margin_right{
+    margin-right: 40px;    
+}
+
+.sub1> li> a{
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+.sub1> li> a:hover{
+    display: inline-block;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.padding2{
+    padding-left: 160px;
+    height: 80px;
+}
+
+.padding3{
+    padding-left: 360px;
+    height: 80px;
+}
+
+.padding4{
+    padding-left: 390px;
+    height: 80px;
+}
+
+.padding5{
+    padding-left: 960px;
+    height: 80px;
+}
+
+
+.sub2 li{
+    margin: 20px 0 20px 20px
+}
+.sub2 li a{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.sub2 li a:hover{
+    display: inline-block;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.font li a{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.swiper-container{
+     width: 100%;
+    margin-top: 0;
+}
+
+#sub1_banner{
+    position: relative;
+}
+
+/* 검색창 */
+#search_sub1{
+    position: absolute;
+    bottom: 30px; left: 50%;
+    transform: translateX(-595px);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    height: 90px;
+    z-index: 80;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.date_search_sub1 li{
+    float: left;
+    margin-right: 20px;
+}
+
+.check_search_sub1 li{
+    float: left;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+.input input{
+    display: inline-block;
+    padding: 15px 0 15px 15px;
+    background-color: rgba(255,255,255,1);
+    border: none;
+    border-radius: 5px;
+}
+
+/* 출발지 */
+.date_search_sub1 li:nth-child(2){
+    background: url(../images/location_black.png) no-repeat left 11px;
+    padding: 10px 10px 10px 30px;
+    border: none;
+}
+
+.date_search_sub1 li:nth-child(2) a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 출발일 */
+.date_search_sub1 li:nth-child(3){
+    background: url(../images/date_black.png) no-repeat left 11px;
+    padding: 10px 10px 10px 35px;
+    border: none;
+}
+
+.date_search_sub1 li:nth-child(3) a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 검색 */
+.date_search_sub1 li:nth-child(4){
+    margin-right: 0;
+}
+
+.button a{
+    display: inline-block;
+    padding: 10px;
+    background-color: #5f8ec0;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 추천여행지 */
+#content1{
+    width: 1320px; height: 300px;
+    margin: 80px auto;
+}
+
+#content1 h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content1_inner li{
+    float: left;
+    margin-left: 85px;
+    
+}
+
+.content1_inner li a{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    
+    width: 222px; height: 222px;
+}
+
+/* 추천_전주 */
+.jeonju{
+    background: url(../images/recommended_jeonju.png) no-repeat top left;
+    transition: all 0.5s;   
+}
+
+.jeonju_hover{
+    background: url(../images/recommended_jeonju_hover.png) no-repeat left top;
+}
+
+
+
+/* 추천_양양 */
+.yangyang{
+    background: url(../images/recommended_yangyang.png) no-repeat top left;
+    transition: all 0.5s;
+}
+
+.yangyang_hover{
+    background: url(../images/recommended_yangyang_hover.png) no-repeat left top;
+}
+
+
+/* 추천_busan */
+.busan{
+    background: url(../images/recommended_busan.png) no-repeat top left;
+    transition: all 0.5s;
+
+}
+
+.busan_hover{
+    background: url(../images/recommended_busan_hover.png) no-repeat left top;
+}
+
+/* 추천_포항 */
+.pohang{
+    background: url(../images/recommended_pohang.png) no-repeat top left;
+    transition: all 0.5s;
+}
+
+.pohang_hover{
+    background: url(../images/recommended_pohang_hover.png) no-repeat left top;
+}
+
+/* 커피패스 */
+
+#coffee{
+    width: 1320px;
+    margin: 50px auto;
+}
+
+#coffee h1{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.coffee_inner li{
+    float: left;
+    margin-left: 14px;
+    width: 319px; height: 325px;
+}
+
+.coffee_inner li:nth-child(1){
+    margin-left: 0;
+}
+
+.coffee_inner li a{
+    width: 319px; height: 325px;
+    display: inline-block;
+}
+
+/* 카페1 */
+.cafe1{
+    background: url(../images/jeju_plant.png) no-repeat left top;
+    transition: all 0.4s;
+}
+
+.cafe1_hover{
+    background: url(../images/jeju_plant_hover.png) no-repeat left top;
+}
+
+/* 카페2 */
+.cafe2{
+    transition: all 0.4s;
+    background: url(../images/jeju_beneno.png) no-repeat left top;
+}
+
+.cafe2_hover{
+    background: url(../images/jeju_beneno_hover.png) no-repeat left top;
+}
+
+/* 카페3 */
+.cafe3{
+    transition: all 0.4s;
+    background: url(../images/jeju_rest.png) no-repeat left top;
+}
+
+.cafe3_hover{
+    background: url(../images/jeju_rest_hover.png) no-repeat left top;
+}
+
+/* 카페2 */
+.cafe4{
+    transition: all 0.4s;
+    background: url(../images/jeju_backyard.png) no-repeat left top;
+}
+
+.cafe4_hover{
+    background: url(../images/jeju_backyard_hover.png) no-repeat left top;
+}
+
+/* 카페 버튼 */
+.cafe5{
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 40px 0 50px 560px;
+    transition: all 0.4s;
+}
+
+.cafe5:hover{
+    background-color: #437fc1;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #437fc1;
+}
+
+/* 부산배너 */
+#banner_busan{
+    background: url(../images/busan.png) no-repeat center top;
+    width: 100%;
+    height: 517px;
+}
+
+.banner_busan_inner{
+    width: 1320px;
+    margin: auto;
+}
+.busan_button{
+    display: inline-block;
+    margin: 220px 0 0 1200px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.busan_button:hover{
+    color: #5f8ec0;
+}
+
+.banner_busan_link{
+    margin: 50px 0 0 490px;
+}
+
+.banner_busan_link li{
+    float: left;
+    margin-right: 50px;
+}
+
+.banner_busan_link li:nth-child(4){
+    margin-right: 0;
+}
+
+.banner_busan_link li p{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* 액티비티 */
+#act{
+    width: 1320px; height: 450px;
+    margin: 100px auto;
+    background: url(../images/act_bg.png) no-repeat left 70px;
+}
+
+#act h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.act_link li{
+    float: left;
+}
+
+
+
+/* 번지 */
+.bungee a{
+    display: inline-block;
+    background: url(../images/act_bungee.png) no-repeat top left;
+    width: 204px; height: 214px;
+    transition: all 0.3s;
+}
+
+.bungee_hover a{
+    background: url(../images/act_bungee_hover.png) no-repeat top left;
+}
+
+/* 서핑 */
+.surfing a{
+    display: inline-block;
+    background: url(../images/act_surfing.png) no-repeat top left;
+    width: 214px; height: 225px;
+    transition: all 0.3s;
+    margin: 160px 0 0 70px;
+}
+
+.surfing_hover a{
+    background: url(../images/act_surfing_hover.png) no-repeat top left;
+}
+
+/* 카트 */
+.kart a{
+    display: inline-block;
+    background: url(../images/act_kart.png) no-repeat top left;
+    width: 214px; height: 214px;
+    transition: all 0.3s;
+    margin: 0 0 0 70px;
+}
+
+.kart_hover a{
+    background: url(../images/act_kart_hover.png) no-repeat top left;
+}
+
+/* 패러글라이딩 */
+.paragliding a{
+    display: inline-block;
+    background: url(../images/act_paragliding.png) no-repeat top left;
+    width: 214px; height: 214px;
+    transition: all 0.3s;
+    margin: 170px 0 0 65px;
+}
+
+.paragliding_hover a{
+    background: url(../images/act_paragliding_hover.png) no-repeat top left;
+}
+
+/* 래프팅 */
+.rafting a{
+    display: inline-block;
+    background: url(../images/act_rafting.png) no-repeat top left;
+    width: 219px; height: 214px;
+    transition: all 0.3s;
+    margin-left: 50px;
+}
+
+.rafting_hover a{
+    background: url(../images/act_rafting_hover.png) no-repeat top left;
+}
+
+/* 입장권 할인전 */
+#sale{
+    background: url(../images/sale_bg.png) no-repeat center top;
+    height: 728px;
+}
+
+.sale_inner{
+    width: 1320px;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+}
+
+.sale_inner h1{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* 입장권 부산 */
+.sale_busan{
+    position: absolute;
+    top: auto; left: 0;
+}
+
+.sale_busan img:nth-child(2){
+    position: absolute;
+    top: 375px; left: 270px;
+    z-index: 99;
+    cursor: pointer;
+
+}
+
+.sale_busan img:nth-child(3){
+    position: absolute;
+    top: 377px; left: 315px;
+    z-index: 99;
+    cursor: pointer;
+
+}
+
+/* 입장권 경복궁 */
+.sale_seoul{
+    position: absolute;
+    top: auto; left: 50%;
+    margin-left: -184px;
+}
+
+.sale_seoul img:nth-child(2){
+    position: absolute;
+    top: 375px; left: 270px;
+    z-index: 99;
+    cursor: pointer;
+
+}
+
+.sale_seoul img:nth-child(3){
+    position: absolute;
+    top: 377px; left: 315px;
+    z-index: 99;
+    cursor: pointer;
+
+}
+
+/* 입장권 서울랜드 */
+.sale_land{
+    position: absolute;
+    top: auto; right: 0;
+}
+
+.sale_land img:nth-child(2){
+    position: absolute;
+    top: 375px; left: 270px;
+    z-index: 99;
+    cursor: pointer;
+
+}
+
+.sale_land img:nth-child(3){
+    position: absolute;
+    top: 377px; left: 315px;
+    z-index: 99;
+    cursor: pointer;
+
+}
+
+/* 리뷰버튼 */
+.sale_button{
+    position: absolute;
+    top: 610px; left: 50%;
+    margin-left: -92px;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+
+.sale_button:hover{
+    background-color: #437fc1;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #437fc1;
+}
+
+/* 아이콘 */
+.cart{
+    background: url(../images/besttours_cart_click.png)no-repeat top left;
+    cursor: pointer;
+
+}
+
+.heart{
+    background: url(../images/besttours_heart_click.png) no-repeat top left;
+    cursor: pointer;
+
+}
+
+/* footer */
+#footer_line{
+    border-top: 1px solid #ccc;
+}
+
+#footer{
+    width: 1320px;
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+    color: #5f8ec0;
+}
+
+.link_footer{
+    margin: 30px 0 20px 480px;
+}
+
+.link_footer li{
+    float: left;
+    margin-right: 20px;
+}
+
+.link_footer li:nth-child(3) a{
+    font-weight: bold;
+}
+
+.link_footer li:nth-child(4){
+    margin-right: 0;
+}
+
+.link_footer li a{
+    display: inline-block;
+    color: #5f8ec0;
+}
+
+#footer p{
+    clear: both;
+    padding-top: 20px;
+    line-height: 28px;
+}
+
+.sns{
+    margin: 30px 0 80px 560px;
+}
+
+.sns li{
+    float: left;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+.sns li:nth-child(4){
+    margin-right: 0;
+}
+
+.sns li:hover{
+    opacity: 1;
+}
+
+
+/* fixed */
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+    z-index: 99;
+  }
+
+.call{
+    position:fixed; 
+    bottom:125px; 
+    right:50px; 
+    display:none;
+    z-index: 99;
+  }

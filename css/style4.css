@@ -1,0 +1,762 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: black;}
+ul{list-style: none;}
+
+body{
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 1320px;
+    font-family: 'NanumSquareRound';
+}
+
+/* header */
+#header{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 99;
+
+}
+
+.header_inner{
+    width: 1320px;
+    margin: auto;
+    height: 100px;
+    padding-top: 50px;
+}
+
+.nav> li{
+    float: left;
+}
+.nav> li> a{
+    display: inline-block;
+    padding: 0px 50px;
+    margin: 0px 14px;
+    color: #437fc1;
+    line-height: 68px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav> li> a:hover{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px 30px 0 0;
+    color: #5a5a5a;
+}
+
+
+
+/* 아이콘 */
+.nav> li> .bg1{
+    display: block;
+    height: 68px;
+    width: 38px;
+    background: url(../images/menu_blue.png) no-repeat 50% 50%;
+    margin: 0;
+}
+
+.nav> li> .bg2{
+    display: block;
+    height: 68px;
+    width: 26px;
+    background: url(../images/mypage_blue.png)no-repeat 50% 50%;
+    margin: 0;
+}
+
+.nav> li> .bg1:hover{
+    display: inline-block;
+    background: url(../images/menu_gray.png) no-repeat 50% 50%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px 30px 0 0;
+}
+
+.nav> li> .bg2:hover{
+    display: inline-block;
+    background: url(../images/mypage_gray.png) no-repeat 50% 50%;
+}
+.nav> li:nth-child(4) a:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.nav> li:nth-child(7) a:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* 전체메뉴 서브메뉴 */
+.menu_inner{
+    width: 100%;
+    position: absolute; 
+    display: none;
+    left: 0; 
+    top: 118px;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 99;
+}
+
+.sub1{
+    width: 1320px;
+    margin: auto;
+    height: 400px;
+    padding: 30px 0 30px 0px;
+    box-sizing: border-box;
+}
+
+.sub1> li{
+    float: left;
+    margin: 0 100px 20px 0;
+}
+
+.sub1> .margin_right{
+    margin-right: 40px;    
+}
+
+.sub1> li> a{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sub1> li> a:hover{
+    display: inline-block;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.padding2{
+    padding-left: 160px;
+    height: 80px;
+}
+
+.padding3{
+    padding-left: 360px;
+    height: 80px;
+}
+
+.padding4{
+    padding-left: 390px;
+    height: 80px;
+}
+
+.padding5{
+    padding-left: 960px;
+    height: 80px;
+}
+
+
+.sub2 li{
+    margin: 20px 0 20px 20px
+}
+.sub2 li a{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.sub2 li a:hover{
+    display: inline-block;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.font li a{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.swiper-container{
+     width: 100%;
+    margin-top: 0;
+}
+
+#sub1_banner{
+    position: relative;
+}
+
+/* 검색창 */
+
+/* 검색창 */
+#search{
+    width: 640px;
+    margin: auto;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0 20px 40px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 30px; left: 50%;
+    transform: translateX(-595px);
+    z-index: 98;
+}
+
+.tabnav{
+    margin-left: 25px;
+}
+
+/* 위 아이콘 */
+.tabnav li{
+    float: left;
+    margin-bottom: 20px;
+}
+
+.tabnav li:nth-child(1){
+    margin-left: 0;
+}
+
+/* 출발지~ */
+.search_bottom li{
+    float: left;
+    margin: 20px 36px 0 0;
+}
+
+/* 3가지 */
+.tabnav li a, .search_bottom li a, .check li a, .search_bottom3 li a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 45px;
+}
+
+/* 위 , 체크 글자색*/
+.tabnav li a, .check li a{
+    color: #5a5a5a;
+}
+
+/* 아래, 체크 패딩, 마진 */
+.search_bottom li a{
+    padding-left: 40px;
+    margin-right: 20px;
+}
+
+
+/* 체크 */
+.check li{
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.check li a{
+    padding-left: 33px;
+}
+
+
+/* 버튼 */
+#search p{
+    clear: both;
+}
+
+.input input{
+    display: inline-block;
+    padding: 15px 0 15px 20px;
+    background-color: rgba(255,255,255,1);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button a{
+    margin: 20px 0 0 220px;
+    display: inline-block;
+    padding: 10px;
+    background-color: #5f8ec0;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 아이콘 */
+
+.tabnav li:nth-child(1) a{
+    background: url(../images/plane_gray.png) no-repeat 5px 12px;
+    padding-top: 10px;
+    padding-right: 5px;
+    margin: 0 80px;
+}
+
+.tabnav li:nth-child(2) a{
+    background: url(../images/suitcase_gray.png) no-repeat 5px 12px;
+    margin: 0 80px;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.tabnav li:nth-child(1) a:hover,
+.tabnav li:nth-child(1) a.active{
+  background: url(../images/plane_black.png) no-repeat 5px 12px;
+  color: black;
+}
+
+.tabnav li:nth-child(2) a:hover,
+.tabnav li:nth-child(2) a.active{
+  background: url(../images/suitcase_black.png) no-repeat 5px 12px;
+  color: #000;
+}
+
+.tabnav li:nth-child(3) a{
+    background: url(../images/hotel_gray.png) no-repeat 5px 12px;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.search_bottom li:nth-child(1), .search_bottom3 li:nth-child(1){
+    background: url(../images/location_black.png) no-repeat left 2px;
+}
+
+.search_bottom li:nth-child(2), .search_bottom3 li:nth-child(2){
+    background: url(../images/date_black.png) no-repeat left 2px;
+}
+
+.check li:nth-child(1){
+    background: url(../images/check_gray.png) no-repeat left 2px;
+}
+
+.check li:nth-child(2){
+    background: url(../images/check_gray.png) no-repeat left 2px;
+    margin-right: 0;
+}
+
+.rt_location li:nth-child(1){
+    background: url(../images/plane_leave.png) no-repeat left 12px;
+    margin-left: 70px;
+}
+
+.rt_location li:nth-child(2){
+    background: url(../images/arrows.png) no-repeat left 7px;
+    margin: 0 20px;
+}
+
+.rt_location li:nth-child(3){
+    background: url(../images/plane_arrive.png) no-repeat left 12px;
+    margin-right: 20px;
+}
+
+.rt_date li:nth-child(1), .ow_date li:nth-child(1){
+    background: url(../images/date_black.png) no-repeat left 12px;
+}
+
+.rt_date li:nth-child(2){
+    background: url(../images/date_black.png) no-repeat left 12px;
+}
+
+.rt_date li:nth-child(3), .ow_date li:nth-child(2){
+    background: url(../images/person.png) no-repeat left 12px;
+}
+
+.search_bottom3 li:nth-child(3){
+    background: url(../images/person.png) no-repeat left 2px;
+}
+
+
+/* on */
+.check li .check_on{
+    background: url(../images/check.png) no-repeat left 2px;
+    color: black;
+}
+
+/* 왕복 */
+.rt_location{
+    width: 567px;
+    margin-top: 15px;
+  }
+  
+  .rt_location li, .rt_date li{
+    float: left;
+    padding: 10px 10px 10px 40px;
+  }
+
+  .rt_location li a, .rt_date li a, .ow_date li a{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  
+  .button2{
+    display: inline-block;
+    padding: 10px;
+    background-color: #5f8ec0;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .rt_date{
+    clear: both;
+  }
+
+  .rt_date li{
+      margin-left: 53px;
+      margin-top: 5px;
+  }
+/* 편도 */
+  .ow_date li{
+    float: left;
+    padding: 10px 10px 10px 40px;
+    margin-left: 110px;
+    margin-top: 5px;
+  }
+
+  #oneway> .rt_location{
+    margin-top: 25px;
+  }
+
+/* 숙소 */
+  .search_bottom3 li{
+    float: left;
+    margin: 20px 0 0 70px;
+  }
+
+/* 추천항공권 */
+#flights{
+    clear: both;
+    width: 1320px;
+    margin: 50px auto;
+    height: 270px;
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+
+#flights h1{
+    float: left;
+    margin-top: 90px;
+}
+
+.flights_link{
+    float: right;
+}
+
+.flights_link li{
+    float: left;
+    margin-left: 50px;
+}
+
+.flights_link li a{
+    width: 200px; height: 267px;
+    transition: all 0.5s;
+}
+
+/* 로마 */
+.flights_rome a{
+    display: inline-block;
+    background: url(../images/flights_rome.png) no-repeat left top;
+}
+
+.flights_rome a:hover{
+    background: url(../images/flights_rome_hover.png) no-repeat left top;
+}
+
+/* 프라하 */
+.flights_praha a{
+    display: inline-block;
+    background: url(../images/flights_praha.png) no-repeat left top;
+}
+
+.flights_praha a:hover{
+    background: url(../images/flights_praha_hover.png) no-repeat left top;
+}
+
+/* 터키 */
+.flights_turkey a{
+    display: inline-block;
+    background: url(../images/flights_turkey.png) no-repeat left top;
+}
+
+.flights_turkey a:hover{
+    background: url(../images/flights_turkey_hover.png) no-repeat left top;
+}
+
+/* la */
+.flights_la a{
+    display: inline-block;
+    background: url(../images/flights_la.png) no-repeat left top;
+}
+
+.flights_la a:hover{
+    background: url(../images/flights_la_hover.png) no-repeat left top;
+}
+
+/* 추천직항 */
+#rc_oneway{
+    width: 1320px;
+    margin: 100px auto;
+    height: 380px;
+}
+
+#rc_oneway h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.oneway_link li{
+    float: left;
+    margin-left: 50px;
+}
+
+.oneway_link li a{
+    width: 280px;  height: 350px;
+    transition: all 1s;
+}
+
+.oneway_link li:nth-child(1){
+    margin-left: 20px;
+}
+
+/* 뉴질랜드 */
+.nz a{
+    display: inline-block;
+    background: url(../images/oneway_nz.png) no-repeat left top;
+}
+
+.nz a:hover{
+    background: url(../images/oneway_nz_hover.png) no-repeat left top;
+}
+
+/* 덴마크 */
+.denmark a{
+    display: inline-block;
+    background: url(../images/oneway_denmark.png) no-repeat left top;
+}
+
+.denmark a:hover{
+    background: url(../images/oneway_denmark_hover.png) no-repeat left top;
+}
+
+ /*스웨덴 */
+.sweden a{
+    display: inline-block;
+    background: url(../images/oneway_sweden.png) no-repeat left top;
+}
+
+.sweden a:hover{
+    background: url(../images/oneway_sweden_hover.png) no-repeat left top;
+}
+
+ /*캐나다 */
+ .canada a{
+    display: inline-block;
+    background: url(../images/oneway_canada.png) no-repeat left top;
+}
+
+.canada a:hover{
+    background: url(../images/oneway_canada_hover.png) no-repeat left top;
+}
+
+/* 호텔특가 */
+#vietnam{
+    background: url(../images/vietnam.png) no-repeat  center top;
+    height: 296px;
+    margin: 250px 0;
+    width: 100%;
+    padding: 100px 0;
+   
+}
+
+.vietnam_inner{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.vietnam_left{
+    position: absolute;
+    margin-top: -200px; left: 0;
+}
+
+.vietnam_right{
+    position: absolute;
+    margin-top: 110px; right: 0;
+}
+
+.v_button{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 200px 0 0 580px;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.v_button:hover{
+    color: #5d7948;
+    background-color: white;
+    font-weight: bold;
+}
+
+/* 호텔 */
+#hotel{
+    width: 1320px;
+    margin: auto;
+    height: 600px;
+}
+
+#hotel h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hotel_link li{
+    float: left;
+    padding: 0 70px;
+}
+
+.hotel_link li:nth-child(1){
+    padding-left: 32px;
+}
+
+.hotel_link li:nth-child(4){
+    padding-right: 0px;
+}
+
+.hotel_link li a{
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+/* 선 */
+.hotel_hawaii{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.hotel_guam{
+    border-right: 1px solid #ccc;
+}
+
+
+
+/* 방콕 */
+.hotel_bangkok a{
+    width:204px; height:433px;
+    background: url(../images/hotel_bangkok.png) no-repeat left top;
+}
+
+.hotel_bangkok a:hover{
+    background: url(../images/hotel_bangkok_hover.png) no-repeat left top;
+}
+
+/* 하와이 */
+.hotel_hawaii a{
+    width:203px; height:432px;
+    background: url(../images/hotel_hawaii.png) no-repeat left top;
+}
+
+.hotel_hawaii a:hover{
+    background: url(../images/hotel_hawaii_hover.png) no-repeat left top;
+}
+
+/* 괌 */
+.hotel_guam a{
+    width:217px; height:433px;
+    background: url(../images/hotel_guam.png) no-repeat left top;
+}
+
+.hotel_guam a:hover{
+    background: url(../images/hotel_guam_hover.png) no-repeat left top;
+}
+
+/* 사이판 */
+.hotel_saipan a{
+    width:241px; height:433px;
+    background: url(../images/hotel_saipan.png) no-repeat left top;
+}
+
+.hotel_saipan a:hover{
+    background: url(../images/hotel_saipan_hover.png) no-repeat left top;
+}
+
+/* 띠배너*/
+.swiper-pagination{
+    color:#fb904b;
+}
+
+.img4{
+    margin-top: 44px;
+}
+
+
+
+/* footer */
+#footer_line{
+    border-top: 1px solid #ccc;
+}
+
+
+#footer{
+    width: 1320px;
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+    color: #5f8ec0;
+}
+
+.link_footer{
+    margin: 30px 0 20px 480px;
+}
+
+.link_footer li{
+    float: left;
+    margin-right: 20px;
+}
+
+.link_footer li:nth-child(3) a{
+    font-weight: bold;
+}
+
+.link_footer li:nth-child(4){
+    margin-right: 0;
+}
+
+.link_footer li a{
+    display: inline-block;
+    color: #5f8ec0;
+}
+
+#footer p{
+    clear: both;
+    padding-top: 20px;
+    line-height: 28px;
+}
+
+.sns{
+    margin: 30px 0 80px 560px;
+}
+
+.sns li{
+    float: left;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+.sns li:nth-child(4){
+    margin-right: 0;
+}
+
+.sns li:hover{
+    opacity: 1;
+}
+
+
+/* fixed */
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+    z-index: 99;
+  }
+
+.call{
+    position:fixed; 
+    bottom:125px; 
+    right:50px; 
+    display:none;
+    z-index: 99;
+  }
